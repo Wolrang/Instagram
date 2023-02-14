@@ -6,11 +6,139 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instagram</title>
   <link rel="stylesheet" href="./style.css">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
 <body>
-  
+  <div class="wrapper">
+    
+    <header class="global-header">
+      <div class="logo-box">
+        <h1 class="logo">
+          <a href="https://www.instagram.com/">
+            <img src="./images/logo-light.png" alt="인스타그램 이미지">
+          </a>
+        </h1>
+      </div>
+    </header>
+    
+    <section class="join-box-list">
+      <form id="join-form" action="./join.html">
+
+        <div class="join-box-item" id="userid">
+          <label>
+            <div class="inputbox">
+              <div>전화번호, 사용자 이름 또는 이메일</div>
+              <input type="text" name="userid">
+            </div>
+          </label>
+        </div>
+
+        <div class="join-box-item" id="userpw">
+          <label>
+            <div class="inputbox">
+              <div>비밀번호</div>
+              <input type="text" name="userpw">
+              <div>
+                <p></p>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <button type="button" id="join-btn" class="ptn-priamry">로그인</button>
+      </form>
+
+      <div class="or-line"><p>-</p>또는<P>-</P></div>
+
+      <div class="fb-join">
+        <h1>
+          <a href="https://ko-kr.facebook.com/">
+            <img src="./images/facebook-icon.png" alt="페이스북 아이콘">
+            <p>페이스북으로 로그인</p>
+          </a>
+        </h1>
+      </div>
+
+      <div class="pw-lose">
+        <p>비밀번호를 잊으셨나요?</p>
+      </div>
+    </section>
+
+    <section class="join-box">
+      <h1>계정이 없으신가요?</h1>
+      <a href="">가입하기</a>
+    </section>
+
+    <div class="appdown-box">
+      <div class="appdown-txt">
+        <P>앱을 다운로드 하세요.</P>
+      </div>
+      <div class="appdown-img">
+        <a href="">
+          <img src="./images/app-store.png" alt="앱스토어 이미지">
+        </a>
+        <a href="">
+          <img src="./images/gg-play.png" alt="구글플레이 이미지">
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="global-footer">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="">Meta</a>
+          </li>
+          <li class="footer-item">
+            <a href="">소개</a>
+          </li>
+          <li class="footer-item">
+            <a href="">블로그</a>
+          </li>
+          <li class="footer-item">
+            <a href="">채용 정보</a>
+          </li>
+          <li class="footer-item">
+            <a href="">도움말</a>
+          </li>
+          <li class="footer-item">
+            <a href="">API</a>
+          </li>
+          <li class="footer-item">
+            <a href="">개인정보처리방침</a>
+          </li>
+          <li class="footer-item">
+            <a href="">약관</a>
+          </li>
+          <li class="footer-item">
+            <a href="">인기 계정</a>
+          </li>
+          <li class="footer-item">
+            <a href="">위치</a>
+          </li>
+          <li class="footer-item">
+            <a href="">Instagram Lite</a>
+          </li>
+          <li class="footer-item">
+            <a href="">DarkMode</a>
+          </li>
+        </ul>
+
+        <div class="copyright">
+          <P>© 2023 Instagram from Meta</P>
+        </div>
+      </div>
+    </footer>
+  </div>
   <script src="./js/script.js"></script>
 </body>
 </html>
